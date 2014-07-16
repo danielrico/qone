@@ -1,0 +1,56 @@
+.wrapper{
+  margin: 0 auto;
+  width: 700px;
+}
+
+@media only screen and (max-width : 740px) {
+
+  .wrapper {
+    font-size: .95em;
+    margin-left: 2%;
+    width: 96%;
+  }
+  #header {
+    margin-bottom: 15px;
+    padding: 15px 0;
+  }
+  .post{
+    margin-bottom: 15px;
+    td abbr {
+      display: block;
+    }
+    h2{
+      font-size: 1.5em;
+    }
+    .the_post{
+      padding: 15px;
+    }
+  }
+  #page_post, .search-results .type-page{
+    margin-bottom: 15px;
+    padding: 15px;
+  }
+  .actions {
+    position: absolute;
+    right: 15px;
+    top: 20px;
+  }
+  #main #respond, .textedit {
+    padding: 15px;
+  }
+
+  /* respond */
+  #respond textarea {
+    width: 96%;
+  }
+  #respond p.logged-in-as, #respond p.must-log-in, #respond p.comment-notes {
+    position: relative;
+    top: auto;
+    right: auto;
+  }
+  .progress.spinner-comment-new {
+    bottom: 17px;
+    left: 44px;
+  }
+
+}

@@ -1,0 +1,17 @@
+/*
+Theme Name:     Qone
+Theme URI:      http://www.daniel-rico.com/qone
+Description:    Child theme for P2 by Automattic, a group blog theme for short update messages, inspired by Twitter.
+Author:         Daniel Rico
+Author URI:     http://www.daniel-rico.com
+Template:       p2                             
+Version:        0.1
+*/
+
+@import 'reset';
+@import 'dependencies';
+@import 'forms';
+
+@import 'main';
+
+@import 'media_queries';

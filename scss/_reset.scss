@@ -1,0 +1,38 @@
+ html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, a, em, img, dl, dt, dd, ol, ul, li, fieldset, form, legend, label, input, textarea, button {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   outline: 0;
+   font-weight: inherit;
+   font-style: inherit;
+   font-size: 100%;
+   font-family: inherit;
+   vertical-align: baseline;
+   font-weight:normal;
+}
+
+:focus {outline: none;}
+a{text-decoration:none;}
+ol, ul {list-style: none;}
+table {border-collapse: collapse;border-spacing: 0;}
+textarea {overflow:auto;} /*removes IE scrollbar */
+h1, h2, h3{text-rendering: optimizeLegibility;}
+
+/* HTML 5 */
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary {
+    display: block;
+}
+audio,canvas,video {
+    display: inline-block;
+}
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/* Text rendering */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
