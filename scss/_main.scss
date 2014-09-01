@@ -211,6 +211,9 @@ header{
     a{
       text-decoration: underline;
     }
+    img{
+      @include fullwidth;
+    }
   }
   ol, ul{
     margin: 0 0 1em 1em;

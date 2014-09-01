@@ -13,10 +13,10 @@
   vertical-align: top;
 }
 
-/* Responsive images : parent element's full width */
+/* Responsive images : parent element's max full width */
 @mixin fullwidth{
   height: auto;
-  width: 100%;
+  max-width: 100%;
 }
 
 /* Main theme colors */

@@ -80,3 +80,8 @@ function qone_comments( $comment, $args ) {
   <?php
 }
 
+// Remove header customization provided by P2 theme
+function remove_header_customization() {
+  remove_theme_support( 'custom-header');
+}
+add_action( 'after_setup_theme', 'remove_header_customization', 11 );
