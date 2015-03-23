@@ -20,6 +20,9 @@ table { border-collapse: collapse; border-spacing: 0; }
 textarea { overflow: auto; }
 
 /*removes IE scrollbar */
+img { vertical-align: top; }
+
+/* removes space after images */
 h1, h2, h3 { text-rendering: optimizeLegibility; }
 
 /* HTML 5 */
@@ -29,8 +32,11 @@ audio, canvas, video { display: inline-block; }
 
 audio:not([controls]) { display: none; height: 0; }
 
+/* Box model */
+*, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
 /* Text rendering */
-html { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; }
+html { font-family: "sans-serif"; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; }
 
 /* Micro clearfix */
 /* Float alternative. About whitespace : http://css-tricks.com/fighting-the-space-between-inline-block-elements */
@@ -106,6 +112,8 @@ header .hide_menu { background: rgba(0, 0, 0, 0.1); }
 .actions { position: absolute; right: 30px; top: 38px; }
 .actions a { border: 1px solid #66cbc9; border-radius: 16px; display: block; float: left; font-size: .9em; height: 32px; line-height: 32px; margin-left: 10px; text-align: center; transition: all .3s ease-in-out; width: 32px; }
 .actions a:hover { background: #66cbc9; color: white; }
+
+[class^="icon-"]:before, [class*=" icon-"]:before { vertical-align: .1em; }
 
   /* COMMENTS
 -------------------------------------------------------------- */

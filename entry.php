@@ -41,7 +41,7 @@
 	</td></tr></table>
 
 	<div class="actions">
-			<a href="<?php the_permalink(); ?>" class="thepermalink<?php if ( is_singular() ) { ?> printer-only<?php } ?>" title="<?php esc_attr_e( 'Permalink', 'p2' ); ?>"><i class="fa fa-link"></i></a>
+			<a href="<?php the_permalink(); ?>" class="thepermalink<?php if ( is_singular() ) { ?> printer-only<?php } ?>" title="<?php esc_attr_e( 'Permalink', 'p2' ); ?>"><i class="icon-link"></i></a>
 			<?php
 			if ( ! is_singular() )
 
@@ -49,12 +49,12 @@
 					echo post_reply_link( array(
 						'before'        => isset( $before_reply_link ) ? $before_reply_link : '',
 						'after'         => '',
-						'reply_text'    => '<i class="fa fa-comment"></i>',
+						'reply_text'    => '<i class="icon-comment"></i>',
 						'add_below'     => 'comments'
 					), get_the_ID() );
 			}
 
-			if ( current_user_can( 'edit_post', get_the_ID() ) ) : ?> <a href="<?php echo ( get_edit_post_link( get_the_ID() ) ); ?>" class="edit-post-link" rel="<?php the_ID(); ?>" title="<?php esc_attr_e( 'Edit', 'p2' ); ?>"><i class="fa fa-pencil"></i></a>
+			if ( current_user_can( 'edit_post', get_the_ID() ) ) : ?> <a href="<?php echo ( get_edit_post_link( get_the_ID() ) ); ?>" class="edit-post-link" rel="<?php the_ID(); ?>" title="<?php esc_attr_e( 'Edit', 'p2' ); ?>"><i class="icon-pencil"></i></a>
 			<?php endif; ?>
 
 			<?php do_action( 'p2_action_links' ); ?>

@@ -4,8 +4,6 @@
   function load_qone_fonts() {
     wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Maven+Pro|Open+Sans:400italic,700italic,400,700');
     wp_enqueue_style( 'googleFonts');
-    wp_register_style( 'font-awesome', 'http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' );
-    wp_enqueue_style( 'font-awesome');
   }
   add_action('wp_print_styles', 'load_qone_fonts');
 
@@ -17,6 +15,13 @@
     wp_enqueue_script( 'qone');
   }
   add_action('wp_enqueue_scripts', 'load_qone_scripts');
+
+// load css
+  function load_styles() {
+    wp_register_style('fontello', get_stylesheet_directory_uri() . '/fonts/fontello/css/fontello.css');
+    wp_enqueue_style( 'fontello');
+  }
+  add_action('wp_print_styles', 'load_styles');
 
 // Add viewport meta tag to head
   function viewport_meta() { 
@@ -42,7 +47,7 @@ function qone_comments( $comment, $args ) {
   $can_edit_post  = current_user_can( 'edit_post', $comment->comment_post_ID );
 
   $reply_link     = prologue_get_comment_reply_link(
-    array( 'depth' => $depth, 'max_depth' => $args['max_depth'], 'before' => '', 'reply_text' => __( '<i class="fa fa-comment"></i>' ) ),
+    array( 'depth' => $depth, 'max_depth' => $args['max_depth'], 'before' => '', 'reply_text' => __( '<i class="icon-comment"></i>' ) ),
     $comment->comment_ID, $comment->comment_post_ID );
 
   $content_class  = 'commentcontent';
@@ -59,12 +64,12 @@ function qone_comments( $comment, $args ) {
       <span class="meta">
         <?php echo p2_date_time_with_microformat( 'comment' ); ?>
         <span class="actions">
-          <a class="thepermalink" href="<?php echo esc_url( get_comment_link() ); ?>" title="<?php esc_attr_e( 'Permalink', 'p2' ); ?>"><i class="fa fa-link"></i></a>
+          <a class="thepermalink" href="<?php echo esc_url( get_comment_link() ); ?>" title="<?php esc_attr_e( 'Permalink', 'p2' ); ?>"><i class="icon-link"></i></a>
           <?php
           echo $reply_link;
 
           if ( $can_edit_post )
-            edit_comment_link( __( '<i class="fa fa-pencil"></i>' ), '' );
+            edit_comment_link( __( '<i class="icon-pencil"></i>' ), '' );
 
           ?>
         </span>

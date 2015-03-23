@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Header template.
  *
@@ -22,7 +22,7 @@
 
       <h1><a href="<?php echo home_url( '/' ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 
-      <div class="show_menu" title="<?php _e( 'Menu', 'p2' ) ?>"><i class="fa fa-bars"></i></div>
+      <div class="show_menu" title="<?php _e( 'Menu', 'p2' ) ?>"><i class="icon-menu"></i></div>
 
       <?php if ( current_user_can( 'publish_posts' ) ) : ?>
         <a href="" id="mobile-post-button" style="display: none;"><?php _e( 'Post', 'p2' ) ?></a>
