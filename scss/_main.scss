@@ -382,18 +382,13 @@ main #respond, .textedit {
 /* avatars */
 
 .avatar{
+  border-radius: 50%;
   box-shadow: 0 1px 0 rgba(0,0,0,15/100);
 }
-.avatar-48{
-  border-radius: 24px;
-  float: left;
-}
-.avatar-32{
-  border-radius: 16px;
+.avatar-48, .avatar-32{
   float: left;
 }
 .avatar-16{
-  border-radius: 8px;
   margin-bottom: -2px;
 }
 

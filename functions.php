@@ -55,7 +55,7 @@ function qone_comments( $comment, $args ) {
     $content_class .= ' comment-edit';
 
   ?>
-  <li id="comment-<?php comment_ID(); ?>" <?php comment_class(); ?>>
+  <li id="comment-<?php comment_ID(); ?>" <?php comment_class(); ?> >
     <?php do_action( 'p2_comment' ); ?>
 
     <?php echo get_avatar( $comment, 32 ); ?>

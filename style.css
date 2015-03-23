@@ -1,11 +1,11 @@
 /*
 Theme Name:     Qone
 Theme URI:      http://www.daniel-rico.com/qone
-Description:    Child theme for P2 by Automattic, a group blog theme for short update messages, inspired by Twitter.
+Description:    Child theme for P2 by Automattic, a group blog theme with a tumblr touch.
 Author:         Daniel Rico
 Author URI:     http://www.daniel-rico.com
 Template:       p2                             
-Version:        0.1
+Version:        0.5
 */
 html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, a, em, img, dl, dt, dd, ol, ul, li, fieldset, form, legend, label, input, textarea, button { margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; font-weight: normal; }
 
@@ -178,13 +178,11 @@ main #respond, .textedit { background: #f0fbfb; padding: 20px 30px; position: re
 .nav-newer { float: right; max-width: 49%; }
 
 /* avatars */
-.avatar { box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15); }
+.avatar { border-radius: 50%; box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15); }
 
-.avatar-48 { border-radius: 24px; float: left; }
+.avatar-48, .avatar-32 { float: left; }
 
-.avatar-32 { border-radius: 16px; float: left; }
-
-.avatar-16 { border-radius: 8px; margin-bottom: -2px; }
+.avatar-16 { margin-bottom: -2px; }
 
   /* PAGE
 -------------------------------------------------------------- */
