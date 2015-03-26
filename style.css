@@ -1,7 +1,7 @@
 /*
 Theme Name:     Qone
 Theme URI:      http://www.daniel-rico.com/qone
-Description:    Child theme for P2 by Automattic, a group blog theme with a tumblr touch.
+Description:    Child theme for P2 by Automattic : a group blog theme with a tumblr flavor.
 Author:         Daniel Rico
 Author URI:     http://www.daniel-rico.com
 Template:       p2                             
@@ -99,7 +99,7 @@ header .hide_menu { background: rgba(0, 0, 0, 0.1); }
 .post table { margin-bottom: 1em; }
 .post td { font-family: 'Maven Pro', sans-serif; height: 48px; padding-left: 10px; vertical-align: middle; }
 .post td a { color: #000; }
-.post td abbr { font-size: .75em; color: #aaa; }
+.post td abbr { color: #aaa; font-size: .75em; }
 .post .post_author_date { padding: 3px 0; }
 .post .tags { color: #666; font-size: .75em; }
 .post .tags a { color: #66cbc9; text-decoration: underline; }
@@ -122,7 +122,7 @@ header .hide_menu { background: rgba(0, 0, 0, 0.1); }
 .comment h4 { font-size: .85em; color: #666; display: table; height: 32px; margin: 0 0 15px 42px; vertical-align: middle; }
 .comment h4 a { color: #000; }
 .comment .meta { display: block; }
-.comment abbr { color: #999; font-size: .75em; }
+.comment abbr { color: #999; display: block; font-size: .75em; margin-top: 1px; }
 .comment p, .comment li { font-size: .8em; line-height: 1.5em; margin-bottom: 1em; }
 .comment p a, .comment li a { text-decoration: underline; }
 .comment p img, .comment li img { height: auto; max-width: 100%; }
@@ -178,11 +178,11 @@ main #respond, .textedit { background: #f0fbfb; padding: 20px 30px; position: re
 .nav-newer { float: right; max-width: 49%; }
 
 /* avatars */
-.avatar { border-radius: 50%; box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15); }
-
-.avatar-48, .avatar-32 { float: left; }
+.avatar { border-radius: 50%; box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15); float: left; }
 
 .avatar-16 { margin-bottom: -2px; }
+
+.discussion .avatar { float: none; }
 
   /* PAGE
 -------------------------------------------------------------- */
@@ -250,3 +250,10 @@ footer a { color: #999; text-decoration: underline; }
   #respond textarea { width: 96%; }
   #respond p.logged-in-as, #respond p.must-log-in, #respond p.comment-notes { position: relative; top: auto; right: auto; }
   .progress.spinner-comment-new { bottom: 17px; left: 44px; } }
+@media only screen and (max-width: 420px) { .actions { margin-bottom: 15px; position: relative; right: auto; top: auto; }
+  .actions:before, .actions:after { content: ""; display: table; }
+  .actions:after { clear: both; }
+  .actions { zoom: 1; }
+  .actions a { margin: 0 10px 0 0; }
+  .comment .actions { display: block; margin: 8px 0 0 0; top: auto; }
+  .comment .actions a { margin: 0 8px 0 0; } }

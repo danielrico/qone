@@ -54,3 +54,29 @@
   }
 
 }
+
+@media only screen and (max-width : 420px) {
+  
+  .actions{
+    @include cf;
+    margin-bottom: $gutter/2;
+    position: relative;
+    right: auto;
+    top: auto;
+    a{
+      margin: 0 10px 0 0;
+    }
+  }
+    
+  .comment{
+    .actions{
+      display: block;
+      margin: 8px 0 0 0;
+      top: auto;
+       a{
+        margin: 0 8px 0 0;
+      }
+    }
+  }
+  
+}

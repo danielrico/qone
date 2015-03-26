@@ -115,8 +115,8 @@ header{
       color: #000;
     }
     abbr{
-      font-size: .75em;
       color: #aaa;
+      font-size: .75em;
     }
   }
   .post_author_date{
@@ -205,7 +205,9 @@ header{
   }
   abbr{
     color: #999;
+    display: block;
     font-size: .75em;
+    margin-top: 1px;
   }
   p, li{
     font-size: .8em;
@@ -384,14 +386,14 @@ main #respond, .textedit {
 .avatar{
   border-radius: 50%;
   box-shadow: 0 1px 0 rgba(0,0,0,15/100);
-}
-.avatar-48, .avatar-32{
   float: left;
 }
 .avatar-16{
   margin-bottom: -2px;
 }
-
+.discussion .avatar{
+  float: none;
+}
 
 
   /* PAGE

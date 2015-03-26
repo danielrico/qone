@@ -29,8 +29,11 @@
 		<?php if ( ! is_page() ): ?>
 			<div class="post_author_date"><a href="<?php echo esc_attr( $author_posts_url ); ?>" title="<?php echo esc_attr( $posts_by_title ); ?>"><?php the_author(); ?></a>
 			<?php endif; ?>
-			<?php	if ( ! is_page() ) {
-					echo p2_date_time_with_microformat();
+			<?php	if ( ! is_page() ) { ?>
+              <a href="<?php the_permalink(); ?>" class="thepermalink<?php if ( is_singular() ) { ?> printer-only<?php } ?>" title="<?php esc_attr_e( 'Permalink', 'p2' ); ?>">
+              <?php echo p2_date_time_with_microformat(); ?>
+            </a>
+            <?php // echo p2_date_time_with_microformat();
 			} ?></div>
 
 			<?php if ( is_object_in_taxonomy( get_post_type(), 'post_tag' ) ) : ?>
