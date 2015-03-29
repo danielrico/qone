@@ -253,10 +253,17 @@ footer a { color: #999; text-decoration: underline; }
   #respond textarea { width: 96%; }
   #respond p.logged-in-as, #respond p.must-log-in, #respond p.comment-notes { position: relative; top: auto; right: auto; }
   .progress.spinner-comment-new { bottom: 17px; left: 44px; } }
-@media only screen and (max-width: 420px) { .actions { margin-bottom: 15px; position: relative; right: auto; top: auto; }
+@media only screen and (max-width: 420px) { h1 a { font-family: "maven pro", sans-serif; width: auto; }
+  .the_post .avatar { height: 48px; width: 48px; }
+  .actions { margin-bottom: 15px; position: relative; right: auto; top: auto; }
   .actions:before, .actions:after { content: ""; display: table; }
   .actions:after { clear: both; }
   .actions { zoom: 1; }
   .actions a { margin: 0 10px 0 0; }
+  .comment { padding: 20px 20px 10px 20px; }
   .comment .actions { display: block; margin: 8px 0 0 0; top: auto; }
-  .comment .actions a { margin: 0 8px 0 0; } }
+  .comment .actions a { margin: 0 8px 0 0; }
+  .comment .avatar { height: 32px; width: 32px; }
+  main #respond, .textedit { padding: 20px; position: relative; }
+  #respond p.comment-notes { margin-bottom: 15px; }
+  #commentform #comment { margin-bottom: 10px; width: auto; } }

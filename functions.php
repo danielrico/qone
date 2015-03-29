@@ -1,9 +1,13 @@
 <?php
 
-// load css
+// load fonts css
   function load_qone_fonts() {
     wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Maven+Pro|Open+Sans:400italic,700italic,400,700');
-    wp_enqueue_style( 'googleFonts');
+    wp_enqueue_style('googleFonts');
+    wp_register_style('fontello', get_stylesheet_directory_uri() . '/fonts/fontello/css/fontello.css');
+    wp_enqueue_style('fontello');
+    wp_register_style('main_css', get_stylesheet_directory_uri().'/style.css' );
+    wp_enqueue_style('main_css');
   }
   add_action('wp_print_styles', 'load_qone_fonts');
 
@@ -15,13 +19,6 @@
     wp_enqueue_script( 'qone');
   }
   add_action('wp_enqueue_scripts', 'load_qone_scripts');
-
-// load css
-  function load_styles() {
-    wp_register_style('fontello', get_stylesheet_directory_uri() . '/fonts/fontello/css/fontello.css');
-    wp_enqueue_style( 'fontello');
-  }
-  add_action('wp_print_styles', 'load_styles');
 
 // Add viewport meta tag to head
   function viewport_meta() { 

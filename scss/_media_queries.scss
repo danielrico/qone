@@ -57,6 +57,14 @@
 
 @media only screen and (max-width : 420px) {
   
+  h1 a {
+    font-family: "maven pro", sans-serif;
+    width: auto;
+  }
+  .the_post .avatar {
+    height: 48px;
+    width: 48px;
+  }
   .actions{
     @include cf;
     margin-bottom: $gutter/2;
@@ -67,8 +75,8 @@
       margin: 0 10px 0 0;
     }
   }
-    
   .comment{
+    padding: 20px $gutter/1.5 10px $gutter/1.5;
     .actions{
       display: block;
       margin: 8px 0 0 0;
@@ -77,6 +85,21 @@
         margin: 0 8px 0 0;
       }
     }
+    .avatar {
+      height: 32px;
+      width: 32px;
+    }
+  }
+  main #respond, .textedit {
+    padding: $gutter/1.5;
+    position: relative;
+  }
+  #respond p.comment-notes{
+    margin-bottom: $gutter/2;
+  }
+  #commentform #comment {
+    margin-bottom: 10px;
+    width: auto;
   }
   
 }
