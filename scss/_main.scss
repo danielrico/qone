@@ -47,7 +47,7 @@ header{
     cursor: pointer;
     float: right;
     font-size: .9em;
-    padding: 7px 10px;
+    padding: 7px;
     transition: background .3s ease-in-out;
     &:hover{
       background: rgba(0,0,0,1/10);
@@ -545,6 +545,10 @@ aside{
         -webkit-filter: grayscale(0%);
       }
     }
+  }
+  .tagcloud a{
+    margin-right: 5px;
+    font-size: 1em!important;
   }
 }
 body.sidebar{
