@@ -1,11 +1,13 @@
 /*
 Theme Name:     Qone
 Theme URI:      http://www.daniel-rico.com/qone
-Description:    Child theme for P2 by Automattic : a group blog theme with a tumblr flavor.
+Author: Daniel Rico
+Author URI: http://www.daniel-rico.com
+Description:    A WordPress theme with a Tumblr flavour for group bloggers. Qone is a P2 child theme, you will need to install P2 to make it work. http://p2theme.com
 Author:         Daniel Rico
-Author URI:     http://www.daniel-rico.com
 Template:       p2                             
 Version:        0.5
+Licence: Same as P2.
 */
 html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, a, em, img, dl, dt, dd, ol, ul, li, fieldset, form, legend, label, input, textarea, button { margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; font-weight: normal; }
 
