@@ -3,11 +3,17 @@ Theme Name:     Qone
 Theme URI:      http://www.daniel-rico.com/qone
 Author: Daniel Rico
 Author URI: http://www.daniel-rico.com
-Description:    A WordPress theme with a Tumblr flavour for group bloggers. Qone is a P2 child theme, you will need to install P2 to make it work. http://p2theme.com
+Description:    Qone is a clean and minimalist WordPress theme for group blogging. It looks as simple as a tumblr theme and is responsive. It has special features like inline post edition and live updates.
+Qone is a child theme of P2 by Automattic, so to make it work you will have to download and install P2 : http://p2theme.com Learn more about the theme here http://www.daniel-rico.com/qone
 Author:         Daniel Rico
 Template:       p2                             
-Version:        0.5
-Licence: Same as P2.
+Version:        1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: minimalist, group-blogging, responsive, green, custom-colors, one-columns, rtl-language-support, right-sidebar, white, light, front-page-post-form, translation-ready, custom-background, custom-menu, theme-options
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
 */
 html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, a, em, img, dl, dt, dd, ol, ul, li, fieldset, form, legend, label, input, textarea, button { margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; font-weight: normal; }
 
