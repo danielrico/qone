@@ -72,6 +72,10 @@ header{
     background: white;
     border-radius: 4px;
     padding: $gutter;
+    img{
+      height: auto;
+      max-width: 100%;
+    }
     p, li{
       color: #666;
       font-size: .85em;
@@ -80,10 +84,9 @@ header{
       a{
         text-decoration: underline;
       }
-      img{
-        height: auto;
-        max-width: 100%;
-      }
+    }
+    .wp-caption{
+      width: auto!important;
     }
     ol, ul{
       margin: 0 0 1em 1em;
@@ -265,7 +268,7 @@ header{
 
 
 
-/* FORM REPONSE */
+/* FORM REPLY */
 
 
 main #respond, .textedit {
@@ -309,7 +312,7 @@ main #respond, .textedit {
   }
 }
 
-/* edition de post */
+/* post edition */
 .inlineediting{
   .title{
     margin-top: 20px;
@@ -464,7 +467,7 @@ main #respond, .textedit {
 
 
 
-  /* RESULTATS DE RECHERCHE
+  /* SEARCH RESULTS
 -------------------------------------------------------------- */
 
 
