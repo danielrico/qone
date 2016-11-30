@@ -1,15 +1,16 @@
 Qone
 ====
 
-Try a demo here http://www.daniel-rico.com/qone/demo
+Try a demo here http://qone-demo.daniel-rico.com
+More info here http://qone.daniel-rico.com
 
-v1
+v1.1
 
 Qone is a clean and minimalist WordPress theme for group blogging. 
 It looks as simple as a tumblr theme and is responsive. It has special features like inline post edition and live updates.
 Qone is a child theme of P2 by Automattic, so to make it work you will have to download and install P2 : http://p2theme.com 
 
-Learn more about the theme here http://www.daniel-rico.com/qone
+Learn more about the theme here http://qone.daniel-rico.com
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -17,7 +18,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 INSTALL
 =======
-
 
 1. Install WordPress
 Download WordPress here : http://wordpress.org
@@ -38,4 +38,4 @@ THANK YOU
 
 Thank you for trying out Qone.
 
-http://www.daniel-rico.com/qone
+http://qone.daniel-rico.com
